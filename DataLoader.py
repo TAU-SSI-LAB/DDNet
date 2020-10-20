@@ -81,7 +81,7 @@ class HSDataSet(Dataset):
                 self.logger.error("Can't open %s", label_path)
                 raise FileNotFoundError
         try:
-            hs = hdf5storage.loadmat(label_path)['RefCube'][..., 2:]
+            hs = hdf5storage.loadmat(label_path)['RefCube']
             assert hs.ndim == 3
         except Exception as e:
             self.logger.error('{} - {}'.format(label_path, e))
