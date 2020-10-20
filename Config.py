@@ -75,7 +75,7 @@ class Parameters(object):
         self.params['debug_dir'] = '/home/cs-dl/Results/2d_ICVL'
 
         """ Loss Parameters """
-        self.params['losses'] = {'rmse': 0.4, 'rgb': 0.2, 'ssim': 0.1, 'spectral': 0.1, 'blur': 0}
+        self.params['losses'] = {'rmse': 0.5, 'rgb': 0.2, 'ssim': 0.1, 'spectral': 0.1, 'blur': 0.1}
         self.params['metrics'] = ['psnr']
         """ Test Parameters """
         self.params['test_data_sets'] = [('/media/cs-dl/HD_6TB/Data/ICVL/2D/TestData/Hand_cropped/Sim',
