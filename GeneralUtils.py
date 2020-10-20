@@ -45,6 +45,7 @@ def hs_to_rgb(cube, wave_lengths_range=None, gamma=False):
                   0.0203, 0.0088, 0.0039, 0.0021, 0.0017, 0.0011, 0.0008, 0.00034, 0.00019, 0.00005, 0.00002, 0.,
                   0., 0., 0., 0., 0., 0., 0.])
 
+    wave_lengths_range = np.array(wave_lengths_range)
     min_index = (max(400, min(wave_lengths_range)) - 400) // 10
     max_index = (min(max(wave_lengths_range), 720) - 400) // 10
     spectral_range = range(min_index, max_index + 1)
